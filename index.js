@@ -23,7 +23,7 @@ const bot = new Telegraf(BOT_TOKEN);
 const teraboxUrlRegex = /^https:\/\/(terabox\.com|1024terabox\.com|teraboxapp\.com|teraboxlink\.com|terasharelink\.com|terafileshare\.com)\/s\/[A-Za-z0-9-_]+$/;
 
 // ✅ Your Telegram Channel ID  
-const CHANNEL_ID = "-1008906645565465"; // 🔹 এখানে আপনার চ্যানেলের আইডি বসান  
+const CHANNEL_ID = "-1003016019159"; // 🔹 এখানে আপনার চ্যানেলের আইডি বসান  
 
 // ✅ /start Command  
 bot.start((ctx) => {
@@ -36,7 +36,7 @@ bot.start((ctx) => {
             caption: welcomeMessage,
             parse_mode: 'Markdown',
             ...Markup.inlineKeyboard([
-                [Markup.button.url('📌 US ❖ 𝐖𝐃 𝐙𝐎𝐍𝐄 ❖', 'https://t.me/Opleech_WD')]
+                [Markup.button.url('📌 ❖ 𝗛𝗮𝗰𝗸 𝗩𝗲𝗿𝗰𝗲 ❖', 'https://t.me/hackverce')]
             ])
         }
     );
@@ -84,7 +84,7 @@ bot.on('text', async (ctx) => {
             caption: caption,
             parse_mode: 'Markdown',
             ...Markup.inlineKeyboard([
-                [Markup.button.url(`⬇️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 (${fileSize})`, downloadLink)]
+                [Markup.button.url(`⬇️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝`, downloadLink)]
             ])
         });
 
